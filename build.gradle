@@ -6,7 +6,7 @@ ext {
     versionName = "2.0.2"
 
     // Sdk and tools
-    minSdkVersion = 16
+    minSdkVersion = 15
     targetSdkVersion = 26
     compileSdkVersion = 26
     buildToolsVersion = '26.0.1'
@@ -25,7 +25,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0-beta6'
+        classpath 'com.android.tools.build:gradle:3.1.1'
 
         // Kotlin plugins
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
