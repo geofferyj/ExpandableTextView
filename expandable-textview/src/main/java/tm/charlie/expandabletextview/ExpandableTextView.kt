@@ -8,8 +8,8 @@ import android.support.v7.widget.AppCompatTextView
 import android.text.TextUtils
 import android.util.AttributeSet
 import android.view.View.MeasureSpec.makeMeasureSpec
+import android.view.ViewGroup
 import android.view.animation.AccelerateDecelerateInterpolator
-import org.jetbrains.anko.wrapContent
 import tm.charlie.expandabletextview.ExpandableTextView.State.*
 
 open class ExpandableTextView: AppCompatTextView {
@@ -196,7 +196,7 @@ open class ExpandableTextView: AppCompatTextView {
 							
 							// if fully expanded, set height to WRAP_CONTENT, because when rotating the device
 							// the height calculated with this ValueAnimator isn't correct anymore
-							layoutHeight = wrapContent
+							layoutHeight = ViewGroup.LayoutParams.WRAP_CONTENT
 							log("end expanding")
 						}
 					})
@@ -204,7 +204,7 @@ open class ExpandableTextView: AppCompatTextView {
 				}.start()
 			} else {
 				super.setMaxLines(expandedLines)
-				layoutHeight = wrapContent
+				layoutHeight = ViewGroup.LayoutParams.WRAP_CONTENT
 				state = Expanded
 			}
 			return true
@@ -241,7 +241,7 @@ open class ExpandableTextView: AppCompatTextView {
 							state = Collapsed
 							// if fully collapsed, set height to WRAP_CONTENT, because when rotating the device
 							// the height calculated with this ValueAnimator isn't correct anymore
-							layoutHeight = wrapContent
+							layoutHeight = ViewGroup.LayoutParams.WRAP_CONTENT
 							log("end collapsing")
 						}
 					})
@@ -249,7 +249,7 @@ open class ExpandableTextView: AppCompatTextView {
 				}.start()
 			} else {
 				super.setMaxLines(collapsedLines)
-				layoutHeight = wrapContent
+				layoutHeight = ViewGroup.LayoutParams.WRAP_CONTENT
 				state = Collapsed
 			}
 			return true

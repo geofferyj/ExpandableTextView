@@ -18,7 +18,6 @@ ext {
 buildscript {
     // Kotlin dependencies
     ext.kotlinVersion = '1.1.50'
-    ext.ankoVersion = '0.10.1'
 
     repositories {
         google()
