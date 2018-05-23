@@ -5,7 +5,7 @@ import android.widget.TextView
 
 // Internal extensions
 
-internal inline val TextView.isEllipsized get() = layout.getEllipsisCount(lineCount - 1) > 0
+internal inline val TextView.isEllipsized get() = layout?.getEllipsisCount(lineCount - 1) ?: 0 > 0
 
 internal fun log(message: String) {
 	if (BuildConfig.DEBUG)
