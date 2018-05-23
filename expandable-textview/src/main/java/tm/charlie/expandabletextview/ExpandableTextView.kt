@@ -138,7 +138,7 @@ open class ExpandableTextView: AppCompatTextView {
 			}
 		}
 
-//  Public functions
+// Public functions
 	
 	constructor(context: Context): super(context) {
 		initAttrs()
