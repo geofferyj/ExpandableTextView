@@ -323,6 +323,7 @@ open class ExpandableTextView: AppCompatTextView {
 		
 		companion object {
 			@Suppress("unused")
+			@JvmField
 			val CREATOR: Parcelable.Creator<SavedState> = object: Parcelable.Creator<SavedState> {
 				override fun createFromParcel(source: Parcel) = SavedState(source)
 				override fun newArray(size: Int): Array<SavedState?> = arrayOfNulls(size)
