@@ -1,10 +1,12 @@
-# Anko-ExpandableTextView
+## !!! ANKO lib was deleted. Fix bug with deserialization. Downgrade min sdk version to API 15. Enjoy
+
+# ExpandableTextView
 
 [![Download](https://api.bintray.com/packages/arslancharyev31/android/expandable-textview/images/download.svg) ](https://bintray.com/arslancharyev31/android/expandable-textview/_latestVersion)
 [![Preview the app](https://img.shields.io/badge/Preview-Appetize.io-orange.svg)](https://appetize.io/app/38y5ut81hadtz8drptftt82qd8)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-An Expandable TextView for Android (Api 16+) which is entirely written in
+An Expandable TextView for Android (Api 15+) which is entirely written in
 [Kotlin](https://kotlinlang.org/) and takes advantage of [Anko](https://github.com/Kotlin/anko).
 The library also handles configuration changes, so that the view remains
 expanded/collapsed on configuration change. Extends from `AppCompatTextView`.
