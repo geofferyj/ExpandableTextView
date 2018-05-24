@@ -21,7 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:fontFamily="@font/lato_black"
+                app:fontFamily="@font/lato_black"
                 android:text="@string/lipsum_long"
                 android:textColor="@android:color/black"
                 android:textSize="17sp"
